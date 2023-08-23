@@ -9,26 +9,18 @@ namespace RxGroup.Extensions;
 /// </summary>
 public static class UpdateTimestampsExtension
 {
-    private const int AllowedThreshold = 10;
-    
     public static void UpdateTimestamps(this EntityEntry entry)
     {
         if (entry.Entity is not ITimeStamps) return;
 
+        var entity = entry.CurrentValues;
         var utcNow = DateTimeOffset.UtcNow;
 
         if (entry.State == EntityState.Added)
-        {
-            var createdAt = (DateTimeOffset?) entry.CurrentValues["CreatedAt"];
-
-            if (!createdAt.HasValue || Math.Abs((utcNow - createdAt.Value).Seconds) > AllowedThreshold)
-                entry.CurrentValues["CreatedAt"] = utcNow;
-        }
+            entity["CreatedAt"] = utcNow;
         else
-        {
             entry.Property("CreatedAt").IsModified = false;
-        }
 
-        entry.CurrentValues["UpdatedAt"] = utcNow;
+        entity["UpdatedAt"] = utcNow;
     }
 }

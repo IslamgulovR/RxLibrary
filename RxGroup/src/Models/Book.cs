@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using RxGroup.Models.Interfaces;
 
 namespace RxGroup.Models;
@@ -5,8 +7,12 @@ namespace RxGroup.Models;
 /// <summary>
 ///     Книга
 /// </summary>
-public class Book : Entity<Guid>, ITimeStamps, IDeletable
+public class Book : ITimeStamps, IDeletable
 {
+    [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    public Guid Id { get; set; }
+    
     /// <summary> Название </summary>
     public string Name { get; set; }
     
@@ -26,6 +32,6 @@ public class Book : Entity<Guid>, ITimeStamps, IDeletable
 
     public DateTimeOffset? CreatedAt { get; set; }
     public DateTimeOffset? UpdatedAt { get; set; }
-    
-    public ICollection<BookIssuance> BooksIssuance { get; set; }
+
+    public List<BookIssuance> BooksIssuance { get; set; } = new();
 }

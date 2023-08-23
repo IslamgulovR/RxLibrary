@@ -52,3 +52,4 @@ C:\Users\admin\RiderProjects\RxGroup\RxGroup\bin\Debug\net7.0\AutoMapper.Extensi
 C:\Users\admin\RiderProjects\RxGroup\RxGroup\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Binder.dll
 C:\Users\admin\RiderProjects\RxGroup\RxGroup\bin\Debug\net7.0\Microsoft.Extensions.Hosting.dll
 C:\Users\admin\RiderProjects\RxGroup\RxGroup\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\admin\RiderProjects\RxGroup\RxGroup\bin\Debug\net7.0\Serilog.Enrichers.Span.dll

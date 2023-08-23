@@ -1,10 +1,17 @@
-﻿namespace RxGroup.Models;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace RxGroup.Models;
 
 /// <summary>
 ///     Выдача книги
 /// </summary>
-public class BookIssuance : Entity<Guid>
+public class BookIssuance
 {
+    [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    public Guid Id { get; set; }
+    
     /// <summary> Ссылка на книгу </summary>
     public Guid BookId { get; set; }
     public Book Book { get; set; }

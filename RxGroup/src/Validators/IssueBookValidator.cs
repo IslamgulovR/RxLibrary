@@ -1,5 +1,5 @@
 using FluentValidation;
-using RxGroup.Features.Dto.Issues;
+using RxGroup.Features.BooksIssuance.Dto;
 
 namespace RxGroup.Validators;
 

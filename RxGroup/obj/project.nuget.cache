@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UrAoZOvjr/cvcmBryEYKu9smukoTJjdbncaCgTiFQSGsU1uBv/UEA8XKR11yzyZwaJgJYdPKHbrDHHAAkIoAEA==",
+  "dgSpecHash": "w5BcQbedzrdIsai6zXbXG6rXh0RwOdWydqmcT3Nq3j2FStsPx9rJpE4y+ewUXpu79EeKdS93EqfDiROyc9pneQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\admin\\RiderProjects\\RxGroup\\RxGroup\\RxGroup.csproj",
   "expectedPackageFiles": [
@@ -49,6 +49,7 @@
     "C:\\Users\\admin\\.nuget\\packages\\serilog\\2.12.0\\serilog.2.12.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\serilog.aspnetcore\\7.0.0\\serilog.aspnetcore.7.0.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\serilog.enrichers.assemblyname\\1.0.9\\serilog.enrichers.assemblyname.1.0.9.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\serilog.enrichers.span\\3.1.0\\serilog.enrichers.span.3.1.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\serilog.extensions.hosting\\7.0.0\\serilog.extensions.hosting.7.0.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\serilog.extensions.logging\\7.0.0\\serilog.extensions.logging.7.0.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\serilog.formatting.compact\\1.1.0\\serilog.formatting.compact.1.1.0.nupkg.sha512",

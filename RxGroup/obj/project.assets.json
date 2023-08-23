@@ -861,6 +861,23 @@
           }
         }
       },
+      "Serilog.Enrichers.Span/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Serilog": "2.10.0",
+          "System.Diagnostics.DiagnosticSource": "7.0.0"
+        },
+        "compile": {
+          "lib/net7.0/Serilog.Enrichers.Span.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Serilog.Enrichers.Span.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Serilog.Extensions.Hosting/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -2288,6 +2305,27 @@
         "serilog.enrichers.assemblyname.nuspec"
       ]
     },
+    "Serilog.Enrichers.Span/3.1.0": {
+      "sha512": "xNxy5FxIuLLusRHBpJwJ/YqVw5S7Dtbt79NUsPQxDtu4+CYG4kJgjLs9fjZhKPMjZQL8GZRewT8brap9h2r+Vw==",
+      "type": "package",
+      "path": "serilog.enrichers.span/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "README.md",
+        "lib/net472/Serilog.Enrichers.Span.dll",
+        "lib/net472/Serilog.Enrichers.Span.xml",
+        "lib/net6.0/Serilog.Enrichers.Span.dll",
+        "lib/net6.0/Serilog.Enrichers.Span.xml",
+        "lib/net7.0/Serilog.Enrichers.Span.dll",
+        "lib/net7.0/Serilog.Enrichers.Span.xml",
+        "lib/netstandard2.0/Serilog.Enrichers.Span.dll",
+        "lib/netstandard2.0/Serilog.Enrichers.Span.xml",
+        "serilog.enrichers.span.3.1.0.nupkg.sha512",
+        "serilog.enrichers.span.nuspec"
+      ]
+    },
     "Serilog.Extensions.Hosting/7.0.0": {
       "sha512": "AWsDTs6TeCtyXYDWakzLXCOZA3/IdIfBWBwkYAF0ZvVktVr3E15oYP9pfI7GzKaGVmHaJF9TgFQnFEfcnzEkcw==",
       "type": "package",
@@ -2680,6 +2718,7 @@
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 7.0.4",
       "Serilog.AspNetCore >= 7.0.0",
       "Serilog.Enrichers.AssemblyName >= 1.0.9",
+      "Serilog.Enrichers.Span >= 3.1.0",
       "Serilog.Sinks.Seq >= 5.2.2"
     ]
   },
@@ -2767,6 +2806,10 @@
           "Serilog.Enrichers.AssemblyName": {
             "target": "Package",
             "version": "[1.0.9, )"
+          },
+          "Serilog.Enrichers.Span": {
+            "target": "Package",
+            "version": "[3.1.0, )"
           },
           "Serilog.Sinks.Seq": {
             "target": "Package",

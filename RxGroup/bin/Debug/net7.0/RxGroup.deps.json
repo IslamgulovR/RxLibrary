@@ -17,6 +17,7 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.4",
           "Serilog.AspNetCore": "7.0.0",
           "Serilog.Enrichers.AssemblyName": "1.0.9",
+          "Serilog.Enrichers.Span": "3.1.0",
           "Serilog.Sinks.Seq": "5.2.2"
         },
         "runtime": {
@@ -412,6 +413,18 @@
           "lib/netstandard2.0/Serilog.Enrichers.AssemblyName.dll": {
             "assemblyVersion": "0.0.0.0",
             "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Serilog.Enrichers.Span/3.1.0": {
+        "dependencies": {
+          "Serilog": "2.12.0",
+          "System.Diagnostics.DiagnosticSource": "7.0.1"
+        },
+        "runtime": {
+          "lib/net7.0/Serilog.Enrichers.Span.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.1.0.0"
           }
         }
       },
@@ -862,6 +875,13 @@
       "sha512": "sha512-n5cW6zFWkqKqA0AdvbiQLXsR06KtgjmRH3qxy0YMlr1aTJCbqS3XlLycpRNMsivhR03X/ZyaUYGJmnBxvRzl3A==",
       "path": "serilog.enrichers.assemblyname/1.0.9",
       "hashPath": "serilog.enrichers.assemblyname.1.0.9.nupkg.sha512"
+    },
+    "Serilog.Enrichers.Span/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xNxy5FxIuLLusRHBpJwJ/YqVw5S7Dtbt79NUsPQxDtu4+CYG4kJgjLs9fjZhKPMjZQL8GZRewT8brap9h2r+Vw==",
+      "path": "serilog.enrichers.span/3.1.0",
+      "hashPath": "serilog.enrichers.span.3.1.0.nupkg.sha512"
     },
     "Serilog.Extensions.Hosting/7.0.0": {
       "type": "package",
